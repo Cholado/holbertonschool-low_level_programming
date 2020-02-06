@@ -1,5 +1,6 @@
 #include <stdio.h>
-
+#include <stdlib.h>
+#include <time.h>
 /**
  * main - if else printf line to stdout
  * Description: uses printf to output fixed message
