@@ -14,7 +14,8 @@ int main(void)
 
 	for (n = '00'; n <= '99'; n++)
 	{
-	putchar(n);
+	putchar((n/10)+'0');
+	putchar((n%10)+'0');
 	if (n != '99')
 	{
 		putchar(',');
