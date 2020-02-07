@@ -1,31 +1,40 @@
 #include <stdio.h>
 
 /**
-* main - while if else putchar line to stdout
+* main - for if putchar line to stdout
 * Description: uses putchar to output fixed message
 * Return: 0
 **/
 
 int main(void)
 {
-	int n, m;
+	int n1;
+	int n;
+	int m1;
+	int m;
 
-	for (n = 0; m <= 99; n++)
+	for (n1 = 48; ifirst < 58; n1++)
 	{
-		for (m = 0; m <= 99; m++)
+		for (n = 48; n < 58; n++)
 		{
-			if (n < m && n != m)
+			m = n + 1;
+			m1 = n1;
+			for (; m1 < 58; m1++)
 			{
-				putchar((n / 10) + '0');
-				putchar((n % 10) + '0');
-				putchar(' ');
-				putchar((m / 10) + '0');
-				putchar((m % 10) + '0');
-				if (n != 98 || m != 99)
+				for (; m < 58; m++)
 				{
-					putchar(',');
+					putchar(n1);
+					putchar(n);
 					putchar(' ');
+					putchar(m1);
+					putchar(m);
+					if (n1 != 57 || m1 != 57 || n != 56 || m != 57)
+					{
+						putchar(',');
+						putchar(' ');
+					}
 				}
+				m = 48;
 			}
 		}
 	}
