@@ -10,18 +10,23 @@
 
 int main(void)
 {
-	int n;
+	int n, m, w;
 
-	for (n = '00'; n <= '99'; n++)
+	for (n = 0; i < 100; n++)
 	{
-	putchar((n/10)+'0');
-	putchar((n%10)+'0');
-	if (n != '99')
-	{
-		putchar(',');
-		putchar(' ');
-	}
+		m = n / 10;
+		w = n % 10;
+
+		putchar(m + '0');
+		putchar(w + '0');
+
+		if (n < 99)
+		{
+			putchar(,);
+			putchar( );
+		}
 	}
 	putchar('\n');
+
 	return (0);
 }
