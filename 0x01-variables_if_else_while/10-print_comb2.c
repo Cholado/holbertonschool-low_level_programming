@@ -32,7 +32,7 @@ int main(void)
 		{
 			m = '0';
 		}
-		i++;
+		n++;
 	}
 	return (0);
 }
