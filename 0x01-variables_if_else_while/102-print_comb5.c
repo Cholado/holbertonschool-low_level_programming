@@ -8,33 +8,29 @@
 
 int main(void)
 {
-	int n1;
-	int n;
-	int m1;
-	int m;
+	int i, j;
+	int a, b, c, d;
 
-	for (n1 = 48; ifirst < 58; n1++)
+	for (i = 0; i < 100; i++)
 	{
-		for (n = 48; n < 58; n++)
+		a = i / 10;
+		b = i % 10;
+		for (j = 0; j < 100; j++)
 		{
-			m = n + 1;
-			m1 = n1;
-			for (; m1 < 58; m1++)
+			c = j / 10;
+			d = j % 10;
+			if (i != j && i < j)
 			{
-				for (; m < 58; m++)
+				putchar(a + '0');
+				putchar(b + '0');
+				putchar(' ');
+				putchar(c + '0');
+				putchar(d + '0');
+				if (i != 98 || j != 99)
 				{
-					putchar(n1);
-					putchar(n);
+					putchar(',');
 					putchar(' ');
-					putchar(m1);
-					putchar(m);
-					if (n1 != 57 || m1 != 57 || n != 56 || m != 57)
-					{
-						putchar(',');
-						putchar(' ');
-					}
 				}
-				m = 48;
 			}
 		}
 	}
