@@ -1,32 +1,38 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 
 /**
-* main - for  putchar line to stdout
+* main - while if else putchar line to stdout
 * Description: uses putchar to output fixed message
 * Return: 0
 **/
 
 int main(void)
 {
-	int n, m, w;
+	int n = '0';
+	int m = '0';
 
-	for (n = 0; i < 100; n++)
+	while (n <= '9')
 	{
-		m = n / 10;
-		w = n % 10;
-
-		putchar(m + '0');
-		putchar(w + '0');
-
-		if (n < 99)
+		while (m <= '9')
 		{
-			putchar(,);
-			putchar( );
+			putchar(n);
+			putchar(m);
+			if (m == '9' && n == '9')
+			{
+				putchar('\n');
+			}
+			else
+			{
+				putchar(',');
+				putchar(' ');
+			}
+			m++;
 		}
+		if (m >= '9')
+		{
+			m = '0';
+		}
+		i++;
 	}
-	putchar('\n');
-
 	return (0);
 }
