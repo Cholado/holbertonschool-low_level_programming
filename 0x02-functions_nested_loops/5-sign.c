@@ -1,9 +1,12 @@
 #include "holberton.h"
+
 /**
- * Entry point: print_sign
- * Description: Check if int sign is + , - or 0
+ * print_sign - checks for integer sign
+ * @n: integer to check
+ *
  * Return: 0 or 1
  */
+
 int print_sign(int n)
 {
 	if (n > 0)

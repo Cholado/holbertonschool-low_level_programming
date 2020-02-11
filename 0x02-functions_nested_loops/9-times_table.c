@@ -1,9 +1,11 @@
 #include "holberton.h"
+
 /**
- * Entry point: times_table
- * Description: Putchar the 9 times table, starting with 0
- * Return: 0
+ * times_table - prints the times table up to 9
+ *
+ * Return: void
  */
+
 void times_table(void)
 {
 	int x = 0; /* factor */

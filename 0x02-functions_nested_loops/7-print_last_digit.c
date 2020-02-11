@@ -1,9 +1,12 @@
 #include "holberton.h"
+
 /**
- * Entry point: print_last_digit
- * Description: putchar last digit of int
- * Return: return value of last digit
+ * print_last_digit - prints last digit of integer input
+ * @n: integer to modify
+ *
+ * Return: l
  */
+
 int print_last_digit(int n)
 {
 	int ne;

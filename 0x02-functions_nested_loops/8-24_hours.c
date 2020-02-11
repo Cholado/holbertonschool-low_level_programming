@@ -1,9 +1,11 @@
 #include "holberton.h"
+
 /**
- * Entry point: jack_bauer
- * Description: putchar  display clock timer for 24 hour
+ * jack_bauer - prints every minute of the day
+ *
  * Return: void
  */
+
 void jack_bauer(void)
 {
 	int h, m, i, j, k, l;

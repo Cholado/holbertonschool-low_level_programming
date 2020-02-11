@@ -1,10 +1,13 @@
 #include "holberton.h"
 #include <stdio.h>
+
 /**
- * Entry point: print_to_98
- * Description: printf from input int to 98
+ * print_to_98 - prints from any integer to 98
+ * @n: integer input
+ *
  * Return: void
- **/
+ */
+
 void print_to_98(int n)
 {
 	while (n != 98)

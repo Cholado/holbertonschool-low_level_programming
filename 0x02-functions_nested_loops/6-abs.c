@@ -1,9 +1,12 @@
 #include "holberton.h"
+
 /**
- * Entry point: _abs
- * Description: display stdoutput absolut value of int
+ * _abs - outputs absolut value of integer input
+ * @n: integer to check
+ *
  * Return: n
  */
+
 int _abs(int n)
 {
 	if (n < 0)
