@@ -7,27 +7,25 @@
  * Return: void
  */
 
-void print_diagonal(int n);
+void print_diagonal(int n)
 {
-	int i;
-	int c;
+	int c, i;
 
 	c = 0;
-	if (n <= '0')
+
+	while (n > 0)
 	{
-		_putchar('\n');
-	}
-	else
-	{
-		for (i = 0; i < n; i++)
+		i = c;
+		while (i > 0)
 		{
-			_putchar(92);
-			for (c > 0; c <= i; c++)
-			{
-				_putchar(' ');
-			}
-			_putchar('\n');
+			_putchar(' ');
+			i--;
 		}
+		_putchar('\\');
 		_putchar('\n');
+		c++;
+		n--;
 	}
+	if (c < 1)
+		_putchar('\n');
 }
