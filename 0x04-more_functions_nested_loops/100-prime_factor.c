@@ -8,7 +8,7 @@
  * Return: 0;
  */
 
-int main(void)
+long long main(long long)
 {
 	n = 612852475143;
 
@@ -31,5 +31,5 @@ int main(void)
 		maxPrime = n;
 	printf("%lld\n", n);
 
-	return (0);
+	return (maxPrime);
 }
