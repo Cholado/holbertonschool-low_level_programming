@@ -28,8 +28,9 @@ long long main(long long)
 		}
 	}
 	if (n > 2)
-		maxPrime = n;
+	{
+	maxPrime = n;
 	printf("%lld\n", n);
-
+	}
 	return (maxPrime);
 }
