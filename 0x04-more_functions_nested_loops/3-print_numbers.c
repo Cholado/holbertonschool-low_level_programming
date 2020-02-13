@@ -6,13 +6,15 @@
  * Return: void
  */
 
-void print_numbers(void);
+void print_numbers(void)
 {
-	char c;
+	int i;
 
-		for (c >= 48; c <= 57; c++)
-		{
-			_putchar(c)
-		}
+	i = 0;
+	while (i < 10)
+	{
+		_putchar(i + '0');
+		i++;
+	}
 	_putchar('\n');
 }
