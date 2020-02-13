@@ -7,20 +7,16 @@
  * Return: void
  */
 
-void print_line(int n);
+void print_line(int n)
 {
-	int i;
+	int c;
 
-	if (n <= '0')
+	c = 0;
+	while (c < n)
 	{
-		_putchar('\n');
+		_putchar('_');
+
+		c++;
 	}
-	else
-	{
-		for (i = 0; i < n; i++)
-		{
-			_putchar('_');
-		}
-		_putchar('\n');
-	}
+	_putchar('\n');
 }
