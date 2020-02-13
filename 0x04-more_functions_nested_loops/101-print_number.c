@@ -2,24 +2,44 @@
 
 /**
  * print_number - a function that prints an integer
- * @n: input int
+ * @n: input int number
  * Return: inputted integer
  */
 
 void print_number(int n)
 {
+	long m;
+	int c;
+	long num;
 
-	if (n < 0)
+	num = n;
+	if (num < 0)
 	{
-		putchar(45);
-		n = -n;
+		num *= -1;
+		_putchar('-');
 	}
 
-	if (n == 0)
-		putchar(48);
+	m = 1;
+	c = 1;
+	while (c)
+	{
+		if (num / (m * 10) > 0)
+			m *= 10;
+		else
+			c = 0;
+	}
 
-	if (n / 10)
-		print_number(n / 10);
-
-	putchar(n % 10 + 48);
+	while (num >= 0)
+	{
+		if (m == 1)
+		{
+			_putchar(num % 10 + '0');
+			num = -1;
+		}
+		else
+		{
+			_putchar((num / m % 10) + '0');
+			m /= 10;
+		}
+	}
 }
