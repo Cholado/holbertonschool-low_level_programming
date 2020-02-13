@@ -6,17 +6,23 @@
  * Return: numbers
  */
 
-void more_numbers(void);
+void more_numbers(void)
 {
-	char c;
-	int i;
+	int c, i;
 
-		for (i = 0; i < 10; i++)
+	c = 0;
+	while (c < 10)
+	{
+		i = 0;
+		while (i < 15)
 		{
-			for (c = '0'; c <= '14'; c++)
-			{
-				_putchar(c)
-			}
-			_putchar('\n');
+			if (i > 9)
+				_putchar(i / 10 + '0');
+
+			_putchar(i % 10 + '0');
+			i++;
 		}
+		c++;
+		_putchar('\n');
+	}
 }
