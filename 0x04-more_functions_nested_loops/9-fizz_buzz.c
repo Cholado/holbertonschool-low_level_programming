@@ -1,9 +1,10 @@
 #include <stdio.h>
 
 /**
- * Fizz-Buzz test - prints 1 to 100 changing % 3 for Fizz and % 5 for Buzz
- * Description: prints "1 2 Fizz 4 Buzz Fizz 7 8 Fizz Buzz..."
- * returns: 0
+ * main - main block, solve fizz buzz from numbers 1 to 100
+ * Description: Multiples of 3, print Fizz. Multiples of 5, print Buzz.
+ * Multiples of both 3 and 5 should print FizzBuzz.
+ * Return: 0
  */
 
 int main(void)
