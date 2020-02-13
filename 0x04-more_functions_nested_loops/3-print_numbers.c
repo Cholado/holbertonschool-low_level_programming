@@ -3,14 +3,14 @@
 /**
  * print_numbers - putchar numbers from 0 to 9
  * Description: prints 0123456789
- * Return: 1 if is digit, 0 if is not digit
+ * Return: void
  */
 
 void print_numbers(void);
 {
 	char c;
 
-		for (c >= '0'; c <= '9'; c++)
+		for (c >= 48; c <= 57; c++)
 		{
 			_putchar(c)
 		}
