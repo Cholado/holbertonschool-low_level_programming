@@ -2,7 +2,7 @@
 
 /**
  * print_rev - print a string in reverse
- * @s: char array string type
+ * @s: chars array string type
  */
 
 void print_rev(char *s)
