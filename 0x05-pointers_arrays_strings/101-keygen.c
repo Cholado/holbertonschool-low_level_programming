@@ -2,20 +2,34 @@
 #include <stdlib.h>
 #include <time.h>
 
+/**
+ * main - program to generate random password
+ * file crackme
+ * description: find checksum value from objdump
+ * int 2772 goal, sum of 62 char array can't pass int 122
+ * Return: Return generated password
+ */
+
 int main(void)
 {
-	int randNum;
-	int count;
-	int total;
+	int sum, i, r;
+
+	char a[63] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+	char password[100];
 
 	srand(time(NULL));
-	for (count = 0, total = 2772; total > 122; count++)
-	{
-		randNum = (rand() % 125) + 1;
-		printf("%c", myrand);
-		total -= myrand;
-	}
-	printf("%c", total);
+	sum = 0;
+	i = 0;
 
+	while (sum < (2772 - 122))
+	{
+		r = rand() % 62;
+		password[i] = a[r];
+		sum += password[i];
+		i++;
+	}
+	r = 2772 - sum;
+	password[i] = r;
+	printf("%s\n",  password);
 	return (0);
 }
