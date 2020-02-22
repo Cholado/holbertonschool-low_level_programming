@@ -11,30 +11,34 @@
 
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-	/* i = iterator for n1 and n2; j = iterator for r; n = carry over number */
-	int i, j, n;
+	int i, j, temp, remainder, one, two;
 
-	i = j = n = 0;
-	/* if r[0] >= 10, set value to 1 & increase buffer size by 1*/
-	if ((n1[0] - '0') + (n2[0] - '0') >= 10)
-	{
-		r[0] = 1 + '0';
-		j = 1;
-	}
-	while (i < size_r && (n1[i] != '\0' || n2[i] != '\0' || r[j] != '\0'))
-	{
-		if ((n1[i + 1] - '0') + (n2[i + 1] - '0') >= 10)
-			n = 1;
-		else
-			n = 0;
-		r[j] = (n1[i] - '0') + (n2[i] - '0') + n;
-		r[j] = r[j] % 10 + '0';
-/*printf("i: %d, n1: %d, n2: %d, j: %d, r: %d\n", i, n1[i] - '0', n2[i] - '0', j, r[j]- '0'); debug*/
+	i = j = 0;
+	while (n1[i] != '\0')
 		i++;
+	while (n2[j] != '\0')
 		j++;
-		if (n1[i] == '\0' || n2[i] == '\0')
-			r[j] = '\0';
+	while (size_r != 0 && i != 0 && j != 0)
+	{
+		if (n1[0] == '-')
+			one = (n1[i] - '0');
+		else
+			one = (n1[i] - '0') * -1;
+		if (n2[0] == '-')
+			two = (n1[i] - '0');
+		else
+			two = (n1[i] - '0') * -1;
+
+		temp = one + two + remainder;
+		if (temp > 9)
+		{
+			remainder = temp / 10;
+			temp %= 10;
+		}
+		r[size_r--] = temp;
+		printf("%d\n", r[size_r + 1]);
+		i--;
+		j--;
 	}
-	r[j] = '\0';
-	return (r);
+	return (r[0]);
 }
