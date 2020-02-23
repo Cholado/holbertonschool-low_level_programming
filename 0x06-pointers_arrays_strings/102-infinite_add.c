@@ -7,7 +7,6 @@
  * @size_r: requested size for the buffer
  * Return: pointer to buffer where result is stored
  */
-
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
 	int carry = 0, index = 0, index2;
