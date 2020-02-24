@@ -4,7 +4,7 @@
  * _strstr - locate a substring
  * @haystack: string to be scanned.
  * @needle: small string to be searched with-in haystack string.
- * Description: function finds first occurrence of substring needle in haystack.
+ * Description: function find first occurrence of substring needle in haystack
  * Return: pointer to beginning of located substring, or NULL if not found.
  */
 
