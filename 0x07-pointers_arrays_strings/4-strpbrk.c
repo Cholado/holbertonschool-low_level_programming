@@ -8,7 +8,7 @@
  * Return: ptr to char in s that match one char in accept, or NULL if no found.
  */
 
-char *_strpbrk(char *s, char *accept);
+char *_strpbrk(char *s, char *accept)
 {
 	unsigned int i, j;
 
