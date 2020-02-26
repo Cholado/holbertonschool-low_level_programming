@@ -3,7 +3,7 @@
 /**
  * _puts_recursion - Prints a string followed by a new line
  * @s: String to print
- * Description: writes the string s and a trailing newline to stdout. 
+ * Description: writes the string s and a trailing newline to stdout.
  * Return: void
  */
 
