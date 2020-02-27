@@ -13,7 +13,7 @@ int wildcmp(char *s1, char *s2);
 	if (*s2 == '\0' && *s1 == '\0')
 /* Check if string is at end or not.*/
 		return (1);
-	if (*s2 == '?' || *s2 == *s1)
+	if (*s2 == *s1)
 /*Check for single character missing or match */
 		return (wildcmp(s2 + 1, s1 + 1));
 	if (*s2 == '*')
