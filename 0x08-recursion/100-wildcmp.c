@@ -9,7 +9,7 @@
  * Return: 1 if match, 0 if not
  */
 
-int wildcmp(char *s1, char *s2);
+int wildcmp(char *s1, char *s2)
 {
 	if (*s1 == *s2 && *s1 != '\0' && *s2 != '\0')
 /*Check for single character missing or match */
