@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdio.h>
 
 /**
  * wildcmp - compares two strings, one uses the * wildcard
