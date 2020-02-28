@@ -1,0 +1,8 @@
+#!/bin/bash
+cat list | cut -d '.' -f1 |
+    while read file
+    do
+	filename=$(find ../ -name "${file}.c" | head -n1)
+	gcc -g -O -c "${filename}" -o "${file}.o"
+	ar rc libholberton.a "${file}.o"
+    done
