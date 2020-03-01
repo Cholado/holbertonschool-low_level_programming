@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "holberton.h"
+#include <ctype.h>
 
 /**
  * main - Adds positive numbers given to the program.
@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 		{
 			if (isdigit(argv[i][j]) == 0)
 			{
-				printf("%s\n", "Error");
+				puts("Error");
 				return (1);
 			}
 		}
