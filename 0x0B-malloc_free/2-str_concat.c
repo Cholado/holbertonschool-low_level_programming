@@ -1,12 +1,15 @@
 #include "holberton.h"
-#include <stdlib>
+#include <stdio.h>
+#include <stdlib.h>
+
 /**
  * str_concat - concatenate two strings
  * @s1: dest string
  * @s2: src string
  * Description: appends the src string to the dest string.
- * Return: ptr to new memory > contents of s1 adding s2 at end, ending null
+ * Return: ptr to new memory contents of s1 adding s2 at end, ending null
  */
+
 char *str_concat(char *s1, char *s2)
 {
 	unsigned int i, j, k, l;
