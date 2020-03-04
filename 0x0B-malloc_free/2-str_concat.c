@@ -1,7 +1,5 @@
 #include "holberton.h"
-#include <stdio.h>
 #include <stdlib>
-
 /**
  * str_concat - concatenate two strings
  * @s1: dest string
@@ -9,7 +7,6 @@
  * Description: appends the src string to the dest string.
  * Return: ptr to new memory > contents of s1 adding s2 at end, ending null
  */
-
 char *str_concat(char *s1, char *s2)
 {
 	unsigned int i, j, k, l;
