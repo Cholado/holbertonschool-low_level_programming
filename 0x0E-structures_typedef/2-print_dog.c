@@ -4,7 +4,7 @@
 /**
  * print_dog - prints a struct dog
  * @d: pointer to structure
- *
+ * Description verify existence of pointer and members & print them if true
  * Return: void
  */
 void print_dog(struct dog *d)
