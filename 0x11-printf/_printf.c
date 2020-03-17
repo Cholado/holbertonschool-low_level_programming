@@ -1,4 +1,4 @@
-#include <stdlio.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include "holberton.h"
 
@@ -44,7 +44,7 @@ int _printf(const char *format, ...)
 	int (*f)(va_list);
 
 	if (format == NULL)
-		return (-1);
+		return (255);
 	va_start(valist, format);
 	while (format[i])
 	{
@@ -63,7 +63,7 @@ int _printf(const char *format, ...)
 			continue;
 		}
 		if (!format[i + 1])
-			return (-1);
+			return (255);
 		_putchar(format[i]);
 		j++;
 		if (format[i + 1] == '%')
