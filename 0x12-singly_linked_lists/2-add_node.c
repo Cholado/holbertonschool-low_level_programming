@@ -1,6 +1,21 @@
 #include "lists.h"
 
 /**
+ * _strlen - finds the length of a string
+ * @str: string to find the length of
+ *
+ * Return: length of string
+ */
+unsigned int _strlen(char *str)
+{
+	unsigned int i;
+
+	for (i = 0; str[i]; i++)
+		;
+	return (i);
+}
+
+/**
  * add_node - adds a node to the beginning of a linked list
  * @head: double pointer to a linked list
  * @str: string to add to the new node
@@ -22,7 +37,7 @@ list_t *add_node(list_t **head, const char *str)
 		free(temp);
 		return (NULL);
 	}
-	temp->len = strlen(temp->str);
+	temp->len = _strlen(temp->str);
 	temp->next = *head;
 	*head = temp;
 	return (temp);
