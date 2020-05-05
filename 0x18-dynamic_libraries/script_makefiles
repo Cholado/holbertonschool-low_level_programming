@@ -1,0 +1,7 @@
+#!/bin/bash
+cat list | cut -d '.' -f1 |
+    while read file
+    do
+	filename=$(find ../ -name "${file}.c" | head -n1)
+	cp "${filename}" ~/holbertonschool-low_level_programming/0x18-dynamic_libraries
+    done
