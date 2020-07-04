@@ -7,16 +7,16 @@ def shore_count(grid, height, width, x, y):
     """
     shores = 0
     # North
-    if (x > 0 and grid[x - 1][y]):
+    if (x ==  0 or grid[x - 1][y]):
         shores += 1
     # West
-    if (y > 0 and grid[x][y - 1]):
+    if (y == 0 or grid[x][y - 1]):
         shores += 1
     # South
-    if (y < height-1 and grid[x + 1][y]):
+    if (y == height-1 or grid[x + 1][y]):
         shores += 1
     # East
-    if (y < width-1 and grid[x][y + 1]):
+    if (y == width-1 or grid[x][y + 1]):
         shores += 1
 
     return shores
