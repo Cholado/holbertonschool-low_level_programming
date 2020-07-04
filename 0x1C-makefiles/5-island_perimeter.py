@@ -42,7 +42,7 @@ def island_perimeter(grid):
     # Checks for land (1's in the grid)
     for x in range(height):
         for y in range(width):
-            if (grid[x][y]):
+            if (grid[x][y]) == 1:
                 # 4 compass directions
                 perimeter += (4 - shore_count(grid, height, width, x, y))
     return perimeter
