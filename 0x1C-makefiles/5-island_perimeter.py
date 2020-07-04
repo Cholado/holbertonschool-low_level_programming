@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Returns the perimeter of the island described in grid"""
 
+
 def island_perimeter(grid):
     """
     Calculate perimeter of the island.
@@ -20,7 +21,7 @@ def island_perimeter(grid):
                 size += 1
                 if (y > 0 and grid[x][y - 1] == 1):
                     shores += 1
-                if (x > 0 and grid[x -1][y] == 1):
+                if (x > 0 and grid[x - 1][y] == 1):
                     shores += 1
-    perimeter  = size * 4 - shores * 2
+    perimeter = size * 4 - shores * 2
     return perimeter
