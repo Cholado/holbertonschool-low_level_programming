@@ -32,13 +32,6 @@ def island_perimeter(grid):
     perimeter = 0
     shores = 0
 
-    # Checks for a valid grid
-    if height == 0:
-        return 0
-
-    if width == 0:
-        return 0
-
     # Checks for land (1's in the grid)
     for x in range(height):
         for y in range(width):
