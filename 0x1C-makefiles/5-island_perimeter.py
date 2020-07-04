@@ -1,26 +1,6 @@
 #!/usr/bin/python3
 """Returns the perimeter of the island described in grid"""
 
-def shore_count(grid, height, width, x, y):
-    """
-    uses cartography compass to check the grid island's  shores
-    """
-    shores = 0
-    # North
-    if (x ==  0 or grid[x - 1][y]):
-        shores += 1
-    # West
-    if (y == 0 or grid[x][y - 1]):
-        shores += 1
-    # South
-    if (y == height-1 or grid[x + 1][y]):
-        shores += 1
-    # East
-    if (y == width-1 or grid[x][y + 1]):
-        shores += 1
-
-    return shores
-
 def island_perimeter(grid):
     """
     Calculate perimeter of the island.
@@ -31,11 +11,16 @@ def island_perimeter(grid):
     width = len(grid[0])
     perimeter = 0
     shores = 0
+    size = 0
 
     # Checks for land (1's in the grid)
     for x in range(height):
         for y in range(width):
             if (grid[x][y]) == 1:
-                # 4 compass directions
-                perimeter += (4 - shore_count(grid, height, width, x, y))
+                size += 1
+                if (y > 0 and grid[x][y - 1] == 1):
+                    shores += 1
+                if (x > 0 and grid[x -1][y] == 1):
+                    shores += 1
+    perimeter  = size * 4 - shores * 2
     return perimeter
