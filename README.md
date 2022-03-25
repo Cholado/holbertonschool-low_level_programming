@@ -1,5 +1,5 @@
 <h1 class="gap">Low-level programming & Algorithm - Hatching out and Data structure </h1>
-<p><img src="https://www.entreprises-magazine.com/wp-content/uploads/2020/05/Holberton-School-696x385.jpg" alt="" style="" height="50" width="50"/></p>
+<p><img src="https://www.entreprises-magazine.com/wp-content/uploads/2020/05/Holberton-School-696x385.jpg" alt="" style="" height="150" width="150"/></p>
 
 <h2>Resources</h2>
 <p> Learning and implementing the Holberton framework </p>
